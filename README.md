@@ -1,29 +1,47 @@
-# Sistemas_Distribuidos
-Benchmark de MongoDB
+<h1> Sistemas_Distribuidos </h1>
+<h2> Benchmark de MongoDB </h2>
 
-Antes de prosseguir, verifique o modelo do seu Ubuntu(focal, bionic, etc) e substitua a palavra "focal"(linha 6, coluna 8) pelo seu modelo.
+<p> Antes de prosseguir, verifique o modelo do seu Ubuntu(focal, bionic, etc) e substitua a palavra "focal"(linha 6, coluna 8) pelo seu modelo. </p>
 
-Para começar, instale as dependências com:
-chmod +x config.sh && ./config.sh
+<p>
+   Para começar, instale as dependências com: <br />
+  <em> chmod +x config.sh && ./config.sh </em>
+</p>
 
-Depois de instalada as dependências pode-se usar o comando make para compilar.
-Ele utiliza o arquivo "Entrada.entry" como fonte de comandos.
-Pode-se criar outro arquivo com os comandos ou entrar com eles manualmente em tempo de execução.
+<p>
+  Depois de instalada as dependências pode-se usar o comando make para compilar. <br />
+  Ele utiliza o arquivo "Entrada.entry" como fonte de comandos. <br />
+  Pode-se criar outro arquivo com os comandos ou entrar com eles manualmente em tempo de execução.
+</p.
 
-Para definir um arquivo com as entradas deve-se ficar atento com a sequência das entradas:\
-Linha 1: Número de hosts desejado;\
-Linha 2: Tempo(em minutos) desejado para cada comando;\
-Linha 3 a N-1: Comandos desejados.\
-  Possíveis comandos:\
-    insert: insere registros no banco por x minutos;\
-    delete: deleta registros no banco por x minutos;\
-    update: atualiza registros no banco por x minutos;\
-    find: lê registros no banco por x minutos;\
-    exit: encerra programa.\
-Linha N: exit
+<p>
+  Para definir um arquivo com as entradas deve-se ficar atento com a sequência das entradas. <br />
+  Elas devem ser escritas separadamente, uma em cada linha.
+</p>
 
-Como vemos acima, mas fisando aqui, deve-se encerrar o programa como o comando exit.
+<ol>
+  <li> Número de hosts desejado;</li>
+  <li> Tempo(em minutos) desejado para cada comando;</li>
+  <li> Apartir dessa linha pode-se entrar com os comandos. <br />
+  Possíveis comandos:
+    <ul>
+      <li> <strong>insert</strong>: insere registros no banco por x minutos;</li>
+    <li> <strong>delete</strong>: deleta registros no banco por x minutos;</li>
+    <li> <strong>update</strong>: atualiza registros no banco por x minutos;</li>
+    <li> <strong>find</strong>: lê registros no banco por x minutos;</li>
+    <li> <strong>exit</strong>: encerra programa.</li>
+    </ul>
+    </li>
+ Deve-se encerrar o programa como o comando <strong>exit</strong>.
+  </ol>
 
-Caso dê algum problema e os servidores continuem executando após o encerramento do programa, pode-se usar "make kill" para matá-los.
+<p>
+  Caso dê algum problema e os servidores continuem executando após o encerramento do programa, pode-se usar: <br />
+  <em> make kill </em> <br />
+  Isso irá matá-los.
+</p>
 
-"make clean" limpa tudo, deixando a pasta somente com os arquivos originais padrão.
+<p>
+  Para limpar tudo, deixando a pasta somente com os arquivos originais padrão, usa-se o comando: <br />
+  <em> make clean </em>
+</p>
