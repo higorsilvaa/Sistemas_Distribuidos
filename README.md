@@ -9,14 +9,18 @@
 </p>
 
 <p>
-  Depois de instalada as dependências pode-se usar o comando make para compilar. <br />
+   Depois de instalada as dependências pode-se usar o comando <em>make</em> para compilar o programa. <br />
   Ele utiliza o arquivo "Entrada.entry" como fonte de comandos. <br />
   Pode-se criar outro arquivo com os comandos ou entrar com eles manualmente em tempo de execução.
-</p.
+</p>
 
 <p>
-  Para definir um arquivo com as entradas deve-se ficar atento com a sequência das entradas. <br />
+  Para definir um arquivo com as entradas deve-se ficar atento a sequência eelas no arquivo. <br />
   Elas devem ser escritas separadamente, uma em cada linha.
+</p>
+
+<p>
+   O arquivo segue o seguinte padrão(ordem das linhas):
 </p>
 
 <ol>
@@ -36,9 +40,8 @@
   </ol>
 
 <p>
-  Caso dê algum problema e os servidores continuem executando após o encerramento do programa, pode-se usar: <br />
-  <em> make kill </em> <br />
-  Isso irá matá-los.
+  Caso dê algum problema e os servidores continuem executando após o encerramento do programa, pode-se usar o comando para matá-los: <br />
+  <em> make kill </em>
 </p>
 
 <p>
