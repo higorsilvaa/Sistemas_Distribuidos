@@ -36,7 +36,7 @@
     <li> <strong>exit</strong>: encerra programa.</li>
     </ul>
     </li>
- Deve-se encerrar o programa como o comando <strong>exit</strong>.
+ Deve-se encerrar o programa com o comando <strong>exit</strong>.
   </ol>
 
 <p>
